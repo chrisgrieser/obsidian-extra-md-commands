@@ -11,7 +11,7 @@ This plugin adds commands with alternative Markdown syntax to [Obsidian](https:/
 
 If you want to replace the default commands from Obsidian, remember to remove their htokey binding before changing the hotkeys from this plugin. Example for `Underscore Bold`:
 1. Remove the hotkey `cmd/ctrl + B` for the default command `Toggle Bold`.
-2. Change the hotkey of the `Underscore Bold` command to `cmd/ctrl + B`.
+2. Change the hotkey of the command `Underscore Bold` to `cmd/ctrl + B`.
 
 ## Credits
 
