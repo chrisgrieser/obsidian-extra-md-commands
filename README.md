@@ -1,5 +1,7 @@
 # Alternative Markdown Syntax
 
+![](https://img.shields.io/github/downloads/chrisgrieser/obsidian-alternative-md-syntax/total?label=Total%20Downloads&style=plastic)  ![](https://img.shields.io/github/v/release/chrisgrieser/obsidian-alternative-md-syntax?label=Latest%20Release&style=plastic)
+
 This plugin adds commands with alternative Markdown syntax to [Obsidian](https://obsidian.md/), underscore bold & altalics: `__bold__` and `_italics_`.
 
 ## Commands added
