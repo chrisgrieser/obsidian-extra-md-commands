@@ -1,10 +1,10 @@
 {
-	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
-	"version": "1.0.1",
+	"id": "obsidian-md-alternative-syntax",
+	"name": "Alternative Markdown Syntax",
+	"version": "0.8",
 	"minAppVersion": "0.12.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
+	"description": "Commands for alternative syntax like underscores for __bold__ and _italic_.",
+	"author": "pseudometa",
+	"authorUrl": "https://chris-grieser.de/",
 	"isDesktopOnly": false
 }
