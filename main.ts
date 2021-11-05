@@ -5,28 +5,33 @@ export default class AlternativeMDSyntax extends Plugin {
     this.addCommand({
       id: "underscore-bold",
       name: "Underscore Bold",
-      editorCallback: (editor: Editor, view: MarkdownView) => this.wrapSelection("__", "__"),
+      callback: () => this.wrapSelection("__", "__"),
     });
 
     this.addCommand({
       id: "underscore-italics",
       name: "Underscore Italics",
-      editorCallback: (editor: Editor, view: MarkdownView) => this.wrapSelection("_","_"),
+      callback: () => this.wrapSelection("_","_"),
     });
 
     this.addCommand({
       id: "html-comment",
       name: "HTML Comment",
-      editorCallback: (editor: Editor, view: MarkdownView) => this.wrapSelection("<!--","-->"),
+      callback: () => this.wrapSelection("<!--","-->"),
     });
-    console.log ("Alternative Markdown Syntax Plugin loaded.");
+    console.log ("Alternative MD Syntax Plugin loaded.");
   }
 
   async onunload() {
-    console.log ("Alternative Markdown Syntax Plugin unloaded.");
+    console.log ("Alternative MD Syntax Plugin unloaded.");
   }
 
   wrapSelection(beforeStr: string, afterStr: string): void {
+    //check whether active note is in editor mode
+    let markdownView = this.app.workspace.getActiveViewOfType(MarkdownView);
+    if (!markdownView) return;
+    let editor = markdownView.editor;
+
     let selectedText = "";
     if (editor.somethingSelected()) selectedText = editor.getSelection();
 
