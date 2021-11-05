@@ -5,37 +5,28 @@ export default class AlternativeMDSyntax extends Plugin {
     this.addCommand({
       id: "underscore-bold",
       name: "Underscore Bold",
-      callback: () => this.wrapSelection("__", "__"),
-      hotkeys: [
-        {
-          modifiers: ["Mod","Shift"],
-          key: "b",
-        },
-      ],
+      editorCallback: (editor: Editor, view: MarkdownView) => this.wrapSelection("__", "__"),
     });
 
     this.addCommand({
       id: "underscore-italics",
       name: "Underscore Italics",
-      callback: () => this.wrapSelection("_","_"),
-      hotkeys: [
-        {
-          modifiers: ["Mod","Shift"],
-          key: "i",
-        },
-      ],
+      editorCallback: (editor: Editor, view: MarkdownView) => this.wrapSelection("_","_"),
+    });
+
+    this.addCommand({
+      id: "html-comment",
+      name: "HTML Comment",
+      editorCallback: (editor: Editor, view: MarkdownView) => this.wrapSelection("<!--","-->"),
     });
     console.log ("Alternative Markdown Syntax Plugin loaded.");
   }
 
+  async onunload() {
+    console.log ("Alternative Markdown Syntax Plugin unloaded.");
+  }
 
   wrapSelection(beforeStr: string, afterStr: string): void {
-    //check whether active note is in editor mode
-    let markdownView = this.app.workspace.getActiveViewOfType(MarkdownView);
-    if (!markdownView) return;
-    let editor = markdownView.editor;
-
-
     let selectedText = "";
     if (editor.somethingSelected()) selectedText = editor.getSelection();
 
@@ -43,8 +34,9 @@ export default class AlternativeMDSyntax extends Plugin {
       return editor.offsetToPos(pos);
     }
 
-    // Detect whether the selected text is surrounded with __ __
-    // If true, unpack it, else pack with __ __
+    // Detect whether the selected text is surrounded with Syntax
+    // If true, unpack it, else pack with Syntax
+    // ------------------------------------------------
     const sp = editor.posToOffset(editor.getCursor("from")); // Starting position
     const len = selectedText.length;
     const blen = beforeStr.length;
@@ -72,7 +64,7 @@ export default class AlternativeMDSyntax extends Plugin {
       if (selectedText) {
         editor.replaceSelection(beforeStr + selectedText + afterStr);
         editor.setSelection(Cursor(sp + blen), Cursor(sp + len + alen));
-      // No Selection
+  // No Selection
       } else {
         editor.replaceSelection(beforeStr + afterStr);
         let cursor = editor.getCursor();
