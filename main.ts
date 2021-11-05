@@ -5,22 +5,22 @@ export default class AlternativeMDSyntax extends Plugin {
     this.addCommand({
       id: "underscore-bold",
       name: "Underscore Bold",
-      editorCallback: (editor: Editor, view: MarkdownView)
-        => this.wrapSelection("__", "__", editor),
+      editorCallback: (editor: Editor, view: MarkdownView) => this
+        .wrapSelection("__", "__", editor),
     });
 
     this.addCommand({
       id: "underscore-italics",
       name: "Underscore Italics",
-      editorCallback: (editor: Editor, view: MarkdownView)
-        => this.wrapSelection("_", "_", editor),
+      editorCallback: (editor: Editor, view: MarkdownView) => this
+        .wrapSelection("_", "_", editor),
     });
 
     this.addCommand({
       id: "html-comment",
       name: "HTML Comment",
-      editorCallback: (editor: Editor, view: MarkdownView)
-        => this.wrapSelection("<!--","-->", editor),
+      editorCallback: (editor: Editor, view: MarkdownView) => this
+        .wrapSelection("<!--","-->", editor),
     });
     console.log ("Alternative MD Syntax Plugin loaded.");
   }
@@ -71,7 +71,7 @@ export default class AlternativeMDSyntax extends Plugin {
   // No Selection
       } else {
         editor.replaceSelection(beforeStr + afterStr);
-        let cursor = editor.getCursor();
+        const cursor = editor.getCursor();
         cursor.ch -= alen;
         editor.setCursor(cursor);
       }
