@@ -1,23 +1,26 @@
-import { MarkdownView, Plugin, EditorPosition } from "obsidian";
+import { MarkdownView, Plugin, EditorPosition, Editor } from "obsidian";
 
 export default class AlternativeMDSyntax extends Plugin {
   async onload() {
     this.addCommand({
       id: "underscore-bold",
       name: "Underscore Bold",
-      callback: () => this.wrapSelection("__", "__"),
+      editorCallback: (editor: Editor, view: MarkdownView)
+        => this.wrapSelection("__", "__", editor),
     });
 
     this.addCommand({
       id: "underscore-italics",
       name: "Underscore Italics",
-      callback: () => this.wrapSelection("_","_"),
+      editorCallback: (editor: Editor, view: MarkdownView)
+        => this.wrapSelection("_", "_", editor),
     });
 
     this.addCommand({
       id: "html-comment",
       name: "HTML Comment",
-      callback: () => this.wrapSelection("<!--","-->"),
+      editorCallback: (editor: Editor, view: MarkdownView)
+        => this.wrapSelection("<!--","-->", editor),
     });
     console.log ("Alternative MD Syntax Plugin loaded.");
   }
@@ -26,11 +29,7 @@ export default class AlternativeMDSyntax extends Plugin {
     console.log ("Alternative MD Syntax Plugin unloaded.");
   }
 
-  wrapSelection(beforeStr: string, afterStr: string): void {
-    //check whether active note is in editor mode
-    let markdownView = this.app.workspace.getActiveViewOfType(MarkdownView);
-    if (!markdownView) return;
-    let editor = markdownView.editor;
+  wrapSelection(beforeStr: string, afterStr: string, editor: Editor): void {
 
     let selectedText = "";
     if (editor.somethingSelected()) selectedText = editor.getSelection();
