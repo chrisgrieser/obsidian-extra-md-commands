@@ -1,9 +1,9 @@
 {
-	"id": "obsidian-alternative-md-syntax",
-	"name": "Alternative Markdown Syntax",
-	"version": "0.8",
+	"id": "obsidian-extra-md-html-syntax",
+	"name": "Extra Markdown and HTML Syntax",
+	"version": "0.9",
 	"minAppVersion": "0.12.0",
-	"description": "Commands for alternative syntax like underscores for __bold__ and _italic_.",
+	"description": "Commands for alternative syntax like underscore-bold or <cite>.",
 	"author": "pseudometa",
 	"authorUrl": "https://chris-grieser.de/",
 	"isDesktopOnly": false
