@@ -36,6 +36,22 @@ export default class ExtraMDHTMLSyntax extends Plugin {
       editorCallback: (editor: Editor, view: MarkdownView) => this
         .wrapSelection("<aside>","</aside>", editor),
     });
+
+    this.addCommand({
+      id: "multi-color-highlight-1",
+      name: "Multicolor Highlight 1",
+      editorCallback: (editor: Editor, view: MarkdownView) => this
+        .wrapSelection("*==","==*", editor),
+    });
+
+    this.addCommand({
+      id: "multi-color-highlight-2",
+      name: "Multicolor Highlight 2",
+      editorCallback: (editor: Editor, view: MarkdownView) => this
+        .wrapSelection("**==","==**", editor),
+    });
+
+
     console.log ("Extra MD & HTML Syntax Plugin loaded.");
   }
 
