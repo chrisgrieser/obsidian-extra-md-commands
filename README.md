@@ -17,7 +17,7 @@ If you want to replace the default commands from Obsidian, remember to remove th
 
 ## Credits
 
-Thanks to @SKepticMystic and @koala for their support.
+Thanks to @SkepticMystic and @koala for their support.
 
 Donations via [PayPal](https://www.paypal.com/paypalme/ChrisGrieser) or [Ko-Fi](https://ko-fi.com/pseudometa) are much appreciated! 🙏
 
