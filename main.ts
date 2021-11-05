@@ -1,6 +1,6 @@
 import { MarkdownView, Plugin, EditorPosition, Editor } from "obsidian";
 
-export default class AlternativeMDSyntax extends Plugin {
+export default class AdditionalMDHTMLSyntax extends Plugin {
   async onload() {
     this.addCommand({
       id: "underscore-bold",
@@ -22,11 +22,25 @@ export default class AlternativeMDSyntax extends Plugin {
       editorCallback: (editor: Editor, view: MarkdownView) => this
         .wrapSelection("<!--","-->", editor),
     });
-    console.log ("Alternative MD Syntax Plugin loaded.");
+
+    this.addCommand({
+      id: "html-cite",
+      name: "<cite> tags",
+      editorCallback: (editor: Editor, view: MarkdownView) => this
+        .wrapSelection("<cite>","</cite>", editor),
+    });
+
+    this.addCommand({
+      id: "html-aside",
+      name: "<aside> tags",
+      editorCallback: (editor: Editor, view: MarkdownView) => this
+        .wrapSelection("<aside>","</aside>", editor),
+    });
+    console.log ("Extra MD & HTML Syntax Plugin loaded.");
   }
 
   async onunload() {
-    console.log ("Alternative MD Syntax Plugin unloaded.");
+    console.log ("Extra MD & HTML Syntax Plugin unloaded.");
   }
 
   wrapSelection(beforeStr: string, afterStr: string, editor: Editor): void {
@@ -56,7 +70,7 @@ export default class AlternativeMDSyntax extends Plugin {
     if (charsBefore == beforeStr && charsAfter == afterStr) {
       editor.setSelection(Cursor(sp - blen), Cursor(sp + len + alen));
       editor.replaceSelection(selectedText);
-      editor.setSelection(Cursor(sp - blen), Cursor(sp + len - alen));
+      editor.setSelection(Cursor(sp - blen), Cursor(sp - blen + len));
 
    // Undo surrounding Syntax (inside selection)
     } else if (firstChars == beforeStr && lastChars == afterStr) {
@@ -67,7 +81,7 @@ export default class AlternativeMDSyntax extends Plugin {
     } else {
       if (selectedText) {
         editor.replaceSelection(beforeStr + selectedText + afterStr);
-        editor.setSelection(Cursor(sp + blen), Cursor(sp + len + alen));
+        editor.setSelection(Cursor(sp + blen), Cursor(sp + blen + len));
   // No Selection
       } else {
         editor.replaceSelection(beforeStr + afterStr);
