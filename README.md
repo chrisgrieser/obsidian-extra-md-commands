@@ -20,6 +20,11 @@ This plugin adds commands with extra Markdown syntax to [Obsidian](https://obsid
 1. Remove the hotkey `cmd/ctrl + B`[^2] for the default command `Toggle Bold`.
 2. Assign `cmd/ctrl + B` as the hotkey for the command `Underscore Bold`.
 
+## Installation
+This plugin is still in beta. You can install it nonetheless via the [BRAT plugin](https://github.com/TfTHacker/obsidian42-brat).
+
+When finished, it will be available via Obsidian's Community Plugin Browser. (Obsidian → `Settings` → `Community Plugins` → `Browse` → Search for "Extra Markdown & HTML Syntax",)
+
 ## Credits
 
 Thanks to @SkepticMystic and @koala for their support.
