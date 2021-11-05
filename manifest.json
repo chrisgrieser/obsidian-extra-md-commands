@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-extra-md-html-syntax",
 	"name": "Extra Markdown and HTML Syntax",
-	"version": "0.9",
+	"version": "0.10",
 	"minAppVersion": "0.12.0",
 	"description": "Commands for alternative syntax like underscore-bold or <cite>.",
 	"author": "pseudometa",
