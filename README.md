@@ -6,7 +6,6 @@ This plugin adds commands with extra Markdown syntax to [Obsidian](https://obsid
 
 ## Commands added
 
-
 | Command                    | Effect                  |
 | -------------------------- | ----------------------- |
 | Underscore Bold            | `__foobar__`            |
@@ -14,13 +13,11 @@ This plugin adds commands with extra Markdown syntax to [Obsidian](https://obsid
 | HTML Comment               | `<!--foobar--> `        |
 | <cite> Tags                | `<cite>foobar</cite>`   |
 | <aside> Tags               | `<aside>foobar</aside>` |
-| Multicolor Highlight 1[^2] | `*==foobar==*`          |
-| Multicolor Highlight 2[^2] | `**==foobar==**`        |
-
-
+| Multicolor Highlight 1[^1] | `*==foobar==*`          |
+| Multicolor Highlight 2     | `**==foobar==**`        |
 
 💡 If you want to replace the default commands from Obsidian, remember to remove their hotkey binding before changing the hotkeys from this plugin. Example for `Underscore Bold`:
-1. Remove the hotkey `cmd/ctrl + B`[^1] for the default command `Toggle Bold`.
+1. Remove the hotkey `cmd/ctrl + B`[^2] for the default command `Toggle Bold`.
 2. Assign `cmd/ctrl + B` as the hotkey for the command `Underscore Bold`.
 
 ## Credits
@@ -31,5 +28,5 @@ Donations via [PayPal](https://www.paypal.com/paypalme/ChrisGrieser) or [Ko-Fi](
 
 This plugin has been created by @pseudometa#9546 ([Discord](https://discord.gg/veuWUTm)) aka [@pseudo_meta (Twitter)](https://twitter.com/pseudo_meta) aka Chris Grieser (rl). In my day job, I am a PhD student in sociology, studying the governance of the app economy. If you are interested in this subject, check out [my academic homepage](https://chris-grieser.de/) and get in touch.
 
-[^1]: MacOS uses `cmd`, Windows and Linux use `ctrl`.
-[^2]: Multicolor Highlighting is a form of custom syntax used by some themes like [Sanctum](https://github.com/jdanielmourao/obsidian-sanctum) or [Shimmering Focus](https://github.com/chrisgrieser/shimmering-focus).
+[^1]: Multicolor Highlighting is a form of custom syntax used by some themes like [Sanctum](https://github.com/jdanielmourao/obsidian-sanctum) or [Shimmering Focus](https://github.com/chrisgrieser/shimmering-focus).
+[^2]: MacOS uses `cmd`, Windows and Linux use `ctrl`.
