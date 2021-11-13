@@ -11,8 +11,8 @@ Commands for alternative syntax like __bold__ or `<cite>`.
 | Underscore Bold            | `__foobar__`            |
 | Underscore Italics         | `_foobar_`              |
 | HTML Comment               | `<!--foobar--> `        |
-| <cite> Tags                | `<cite>foobar</cite>`   |
-| <aside> Tags               | `<aside>foobar</aside>` |
+| `<cite>` Tags              | `<cite>foobar</cite>`   |
+| `<aside>` Tags             | `<aside>foobar</aside>` |
 | Multicolor Highlight 1[^1] | `*==foobar==*`          |
 | Multicolor Highlight 2     | `**==foobar==**`        |
 
