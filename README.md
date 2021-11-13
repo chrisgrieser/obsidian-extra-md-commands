@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/github/downloads/chrisgrieser/obsidian-alternative-md-syntax/total?label=Total%20Downloads&style=plastic)  ![](https://img.shields.io/github/v/release/chrisgrieser/obsidian-alternative-md-syntax?label=Latest%20Release&style=plastic)
 
-Commands for alternative syntax like __bold__ or `<cite>`.
+Commands for alternative syntax like `__bold__` or `<cite>`.
 
 ## Commands added
 
