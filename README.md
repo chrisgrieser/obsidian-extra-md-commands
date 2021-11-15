@@ -1,4 +1,4 @@
-# Extra Markdown & HTML Syntax
+# Extra Markdown Commands
 
 ![](https://img.shields.io/github/downloads/chrisgrieser/obsidian-alternative-md-syntax/total?label=Total%20Downloads&style=plastic)  ![](https://img.shields.io/github/v/release/chrisgrieser/obsidian-alternative-md-syntax?label=Latest%20Release&style=plastic)
 
@@ -21,7 +21,7 @@
 2. Assign `cmd/ctrl + B` as the hotkey for the command `Underscore Bold`.
 
 ## Installation
-This plugin is available in Obsidian's Community Plugin Browser: `Settings` → `Community Plugins` → `Browse` → Search for "Extra Markdown & HTML Syntax"
+This plugin is available in Obsidian's Community Plugin Browser: `Settings` → `Community Plugins` → `Browse` → Search for "Extra Markdown Commands"
 
 ## Credits
 
