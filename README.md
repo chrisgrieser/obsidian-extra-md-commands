@@ -21,9 +21,7 @@
 2. Assign `cmd/ctrl + B` as the hotkey for the command `Underscore Bold`.
 
 ## Installation
-This plugin is still in beta. You can install it nonetheless via the [BRAT plugin](https://github.com/TfTHacker/obsidian42-brat).
-
-When finished, it will be available via Obsidian's Community Plugin Browser. (Obsidian → `Settings` → `Community Plugins` → `Browse` → Search for "Extra Markdown & HTML Syntax",)
+This plugin is available in Obsidian's Community Plugin Browser: `Settings` → `Community Plugins` → `Browse` → Search for "Extra Markdown & HTML Syntax"
 
 ## Credits
 
