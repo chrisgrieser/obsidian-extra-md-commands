@@ -41,22 +41,21 @@ export default class ExtraMDcommands extends Plugin {
       id: "multi-color-highlight-1",
       name: "Multicolor Highlight 1",
       editorCallback: (editor: Editor, view: MarkdownView) => this
-        .wrapSelection("*==","==*", editor),
+        .wrapSelection("_==","==_", editor),
     });
 
     this.addCommand({
       id: "multi-color-highlight-2",
       name: "Multicolor Highlight 2",
       editorCallback: (editor: Editor, view: MarkdownView) => this
-        .wrapSelection("**==","==**", editor),
+        .wrapSelection("__==","==__", editor),
     });
 
-
-    console.log ("Extra MD & HTML Syntax Plugin loaded.");
+    console.log ("Extra MD Commands Plugin loaded.");
   }
 
   async onunload() {
-    console.log ("Extra MD & HTML Syntax Plugin unloaded.");
+    console.log ("Extra MD Commands Plugin unloaded.");
   }
 
   wrapSelection(beforeStr: string, afterStr: string, editor: Editor): void {
@@ -98,7 +97,7 @@ export default class ExtraMDcommands extends Plugin {
       if (selectedText) {
         editor.replaceSelection(beforeStr + selectedText + afterStr);
         editor.setSelection(Cursor(sp + blen), Cursor(sp + blen + len));
-  // No Selection
+   // No Selection
       } else {
         editor.replaceSelection(beforeStr + afterStr);
         const cursor = editor.getCursor();
