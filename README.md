@@ -1,6 +1,6 @@
 # Extra Markdown Commands
 
-![](https://img.shields.io/github/downloads/chrisgrieser/obsidian-alternative-md-syntax/total?label=Total%20Downloads&style=plastic)  ![](https://img.shields.io/github/v/release/chrisgrieser/obsidian-alternative-md-syntax?label=Latest%20Release&style=plastic)
+![](https://img.shields.io/github/downloads/chrisgrieser/obsidian-extra-md-commands/total?label=Total%20Downloads&style=plastic)  ![](https://img.shields.io/github/v/release/chrisgrieser/obsidian-extra-md-commands?label=Latest%20Release&style=plastic)
 
 [Obsidian](https://obsidian.md/) plugin that adds various commands, e.g. for `__bold__` or `<cite>`.
 
