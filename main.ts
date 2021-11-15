@@ -1,6 +1,6 @@
 import { MarkdownView, Plugin, EditorPosition, Editor } from "obsidian";
 
-export default class ExtraMDHTMLSyntax extends Plugin {
+export default class ExtraMDcommands extends Plugin {
   async onload() {
     this.addCommand({
       id: "underscore-bold",
