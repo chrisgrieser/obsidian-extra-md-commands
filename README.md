@@ -10,11 +10,12 @@
 | -------------------------- | ----------------------- |
 | Underscore Bold            | `__foobar__`            |
 | Underscore Italics         | `_foobar_`              |
-| HTML Comment               | `<!--foobar--> `        |
+| HTML Comment               | `<!-- foobar --> `      |
 | `<cite>` Tags              | `<cite>foobar</cite>`   |
 | `<aside>` Tags             | `<aside>foobar</aside>` |
-| Multicolor Highlight 1[^1] | `*==foobar==*`          |
-| Multicolor Highlight 2     | `**==foobar==**`        |
+| `<u>` Tags (underline)     | `<u>foobar</u>`        |
+| Multicolor Highlight 1[^1] | `_==foobar==_`          |
+| Multicolor Highlight 2     | `__==foobar==__`        |
 
 💡 If you want to replace the default commands from Obsidian, remember to remove their hotkey binding before changing the hotkeys from this plugin. Example for `Underscore Bold`:
 1. Remove the hotkey `cmd/ctrl + B`[^2] for the default command `Toggle Bold`.

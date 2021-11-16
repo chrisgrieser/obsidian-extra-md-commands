@@ -20,7 +20,7 @@ export default class ExtraMDcommands extends Plugin {
       id: "html-comment",
       name: "HTML Comment",
       editorCallback: (editor: Editor, view: MarkdownView) => this
-        .wrapSelection("<!--","-->", editor),
+        .wrapSelection("<!-- "," -->", editor),
     });
 
     this.addCommand({
@@ -35,6 +35,13 @@ export default class ExtraMDcommands extends Plugin {
       name: "<aside> tags",
       editorCallback: (editor: Editor, view: MarkdownView) => this
         .wrapSelection("<aside>","</aside>", editor),
+    });
+
+    this.addCommand({
+      id: "html-underline",
+      name: "<u> tags",
+      editorCallback: (editor: Editor, view: MarkdownView) => this
+        .wrapSelection("<u>","</u>", editor),
     });
 
     this.addCommand({
