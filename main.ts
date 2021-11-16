@@ -39,7 +39,7 @@ export default class ExtraMDcommands extends Plugin {
 
     this.addCommand({
       id: "html-underline",
-      name: "<u> tags",
+      name: "<u> tags (underline)",
       editorCallback: (editor: Editor, view: MarkdownView) => this
         .wrapSelection("<u>","</u>", editor),
     });
