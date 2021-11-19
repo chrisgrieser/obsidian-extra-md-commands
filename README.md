@@ -13,7 +13,7 @@
 | HTML Comment               | `<!-- foobar --> `      |
 | `<cite>` Tags              | `<cite>foobar</cite>`   |
 | `<aside>` Tags             | `<aside>foobar</aside>` |
-| `<u>` Tags (underline)     | `<u>foobar</u>`        |
+| `<u>` Tags (underline)     | `<u>foobar</u>`         |
 | Multicolor Highlight 1[^1] | `_==foobar==_`          |
 | Multicolor Highlight 2     | `__==foobar==__`        |
 
