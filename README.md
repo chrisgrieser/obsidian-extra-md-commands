@@ -1,7 +1,7 @@
 # Extra Markdown Commands
 
 ---
-ℹ️ This plugin is officially deprecated, since I have made a much better plugin that includes most of this plugin's functionality: [Smarter Markdown Hotkeys.](https://github.com/chrisgrieser/obsidian-smarter-md-hotkeys). For HTML tags, you can use the much more customizable [Wrap with Shortcuts Plugin](https://github.com/manic/obsidian-wrap-with-shortcuts).
+ℹ️ This plugin is officially deprecated, since I have made a much better plugin that includes most of this plugin's functionality: [Smarter Markdown Hotkeys](https://github.com/chrisgrieser/obsidian-smarter-md-hotkeys). For HTML tags, you can use the much more customizable [Wrap with Shortcuts Plugin](https://github.com/manic/obsidian-wrap-with-shortcuts).
 
 ---
 
